@@ -4,7 +4,6 @@
   "description": "",
   "scripts": {
     "build": "rm -rf ./dist; cp -r ./src ./dist",
-    "deploy": "yarn run build && aws s3 sync ./dist s3://lil.boy.media && aws cloudfront create-invalidation --distribution-id E3HIM3DWT8T7O5 --paths '/*' && echo 'Deploy succeeded!'",
     "watch": "browser-sync start --ss ./src"
   },
   "keywords": [],
